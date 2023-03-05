@@ -14,3 +14,6 @@
 * Salgados
 * Contato
 * Localização
+> Páginas Opcionais
+* Minhas receitas
+* Favoritos
