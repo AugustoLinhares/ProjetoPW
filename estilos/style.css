@@ -10,7 +10,6 @@
 
 .header {
     background-color: #00303C;
-    font-size: 16pt;
     color: white;
     padding: 1px;
 
@@ -18,7 +17,8 @@
 
 .Titulo {
     font-family: Abel;
-    font-size: 16px;
+    
+    font-size: 64px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
