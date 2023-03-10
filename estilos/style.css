@@ -8,6 +8,14 @@
     font-family: 'Abel', sans-serif;
 }
 
+:root{
+    --cor1: #00303C;
+    --cor2: #1F6A73;
+    --cor3: #FCF8F7;
+    --font1: Abel;
+    --font2: 'Jockey One';
+
+}
 .header {
     background-color: #00303C;
     color: white;
