@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    width: 1000px;
+    
+}
+
+.header{
+    background-color: #00303C;
+    width: auto;
+    height: auto;
+}
+.titulo{
+    color:white;
+    font-family: 'Abel', sans-serif;
+    display: inline;
+
+}
+
+.topNav{
+    width: 1000px;
+    float: right;
+    margin-top: auto;
+    align-items: flex-end;
+}
+
+
+.topNav>a{
+    color:white;
+    font-family: 'Abel', sans-serif;
+    font-style: none;
+    
+
+}
+
+
+@media screen and (max-widht : 1000px) {
+    
+
+
+
+}
