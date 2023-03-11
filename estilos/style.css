@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2? família=Abel&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -56,8 +55,4 @@
     width: auto;
     height: auto;
     
-}
-.bloco{
-    display: block;
-    background-color: #00303C;
 }
