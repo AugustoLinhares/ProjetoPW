@@ -56,7 +56,24 @@ nav > a:hover{
   padding: 15px;
   border-radius: 4px;
 }
-
+article{
+  margin: auto;
+}
+.textImg{
+  display: grid;
+    gap: 20px;
+    grid-template-columns: 0.5fr;
+    place-items: start;
+    position: fixed;
+    color: white;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+    font-family: var(--font1);
+    font-size: 50px;
+    text-align: left;
+    font-weight: normal;
+}
 li {
     max-width: 1200;
     max-height: 300px;
