@@ -56,14 +56,7 @@ nav > a:hover{
   padding: 15px;
   border-radius: 4px;
 }
-.bannerHome{
-    width: auto;
-    height: auto;
-}
-.bloco{
-    display: block;
-    background-color: #00303C;
-}
+
 li {
     list-style: none;
 }
@@ -235,3 +228,4 @@ input[type="radio"] {
   #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after {
     transform: translate3d(-50%, -50%, 0) scale(2.5);
   }
+  
