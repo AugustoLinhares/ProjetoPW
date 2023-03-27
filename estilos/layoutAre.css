@@ -1,0 +1,30 @@
+*{
+    box-sizing:border-box;
+}
+
+.cabecalho {
+    font-size: 'Abel', sans-serif;
+    background-color: #00303C;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    
+}
+.topnav{
+    overflow: hidden;
+    /*Controlando o conteúdo*/
+    background-color: #00303C;
+}
+
+ul{
+    list-style: url("../materialize/img/icons/icons8-instagram-24.png");
+}
+
+.ul2{
+    list-style-image: url("../materialize/img/icons/twitter.png");
+}
+.colEsq{
+    width: 50%;
+    font-size: 'Abel', sans-serif;
+}
