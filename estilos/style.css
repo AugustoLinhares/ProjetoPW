@@ -18,6 +18,11 @@
 body {
     color: var(--cor1);
     background: var(--cor3);
+
+}
+main{
+  padding: 0 200px 0 200px;
+
 }
 header {
     background-color: var(--cor1);

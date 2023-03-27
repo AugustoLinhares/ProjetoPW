@@ -7,7 +7,9 @@
     margin: 0;
     font-family: 'Abel';
 }
-
+body{
+    padding: 0 200px 0 200px;
+}
 /*Header*/
 header {
     background-color: #00303C;
