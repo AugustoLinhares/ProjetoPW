@@ -13,11 +13,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Abel', sans-serif;
-
 }
 body {
     color: var(--cor1);
-    background: var(--cor3);
+    background: var(--cor2);
+    padding: 0px 200px;
 }
 header {
     background-color: var(--cor1);
@@ -63,12 +63,13 @@ article{
 main{
   
 }
+
 .textImg{
   display: grid;
     gap: 20px;
     grid-template-columns: 0.5fr;
     place-items: start;
-    position: fixed;
+    position: absolute;
     color: white;
     top: 100px;
     left: 50px;
@@ -77,6 +78,11 @@ main{
     font-size: 50px;
     text-align: left;
     font-weight: normal;
+    margin: auto;
+}
+main{
+  background-color: var(--cor3);
+  border-radius: 4px;
 }
 
   
