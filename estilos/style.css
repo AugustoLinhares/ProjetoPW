@@ -37,7 +37,7 @@ header > h1 {
     display: inline-block;
 }
 nav {
-    font-size: 18px;
+    font-size: 20px;
     float: right;
     display: block;
     margin-right: 16px;
@@ -57,11 +57,6 @@ nav > a:hover{
   padding: 15px;
   border-radius: 4px;
 }
-article{
-  margin: auto;
-  
-}
-
 .textImg{
   display: grid;
     gap: 20px;
@@ -78,7 +73,19 @@ article{
     font-weight: normal;
     margin: auto;
 }
-article,
-main{
-    padding: 0px 300px;
+/* -- carousel -- */
+.carousel-item {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+.cards{
+    display: flex;
+    font-size: 10px;
+    
+}
+.card{
+    margin: 20px;
+    border-radius: 0px;
 }
