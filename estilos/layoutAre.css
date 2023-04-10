@@ -1,5 +1,58 @@
-*{
-    box-sizing:border-box;
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel';
+}
+
+/*Header*/
+header {
+    background-color: #00303C;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0 5px 0 5px;
+    flex: auto;
+    min-width: 100px;
+}
+
+header h1 {
+    font-size: 30px;
+    display: inline;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav>a {
+    border: 1px solid black;
+
+    place-content: center;
+    float: right;
+    display: block;
+    color: white;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav>a {
+        text-align: end;
+        display: block;
+        float: none;
+    }
 }
 
 .cabecalho {
@@ -25,6 +78,31 @@ ul{
     list-style-image: url("../materialize/img/icons/twitter.png");
 }
 .colEsq{
-    width: 50%;
+    width: 30%;
     font-size: 'Abel', sans-serif;
+}
+.footer{
+    
+    padding: 5px;
+    text-align: center;
+    background-color: #00303C;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.cardSocial{
+    padding: 5px;
+    text-align: center;
+    background-color: #00303C;
+    color: #ffff;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.cardQuem{
+    color: #1F6A73;
+    text-align: center;
+    margin-top: 10px;
+}
+.letra{
+    font-size: small;
 }
