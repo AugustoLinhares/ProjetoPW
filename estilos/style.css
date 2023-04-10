@@ -16,7 +16,7 @@
 }
 body {
     color: var(--cor1);
-    background: var(--cor2);
+    background: var(--cor3);
     
 }
 header {
@@ -24,6 +24,7 @@ header {
     color: white;
     padding: 20px; 
     min-height: 100%;
+    
 }
 header > h1 {
     font-family: var(--font1);
@@ -58,6 +59,7 @@ nav > a:hover{
 }
 article{
   margin: auto;
+  
 }
 
 .textImg{
@@ -75,4 +77,8 @@ article{
     text-align: left;
     font-weight: normal;
     margin: auto;
+}
+article,
+main{
+    padding: 0px 300px;
 }
