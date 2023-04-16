@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2? família=Abel&display=swap');
-
 main{
     padding: 0px;
 }
@@ -16,18 +15,15 @@ main{
     padding: 0;
     font-family: 'Abel', sans-serif;
 }
-
 body {
     color: var(--cor1);
     background: var(--cor3);
-    
 }
 header {
     background-color: var(--cor1);
     color: white;
     padding: 20px; 
     min-height: 100%;
-    
 }
 header > h1 {
     font-family: var(--font1);
@@ -71,7 +67,7 @@ nav > a:hover{
     left: 50px;
     z-index: 2;
     font-family: var(--font1);
-    font-size: 70px;
+    font-size: 60px;
     text-align: left;
     font-weight: normal;
     margin: auto;
@@ -100,7 +96,7 @@ nav > a:hover{
 }
 .card-title{
    font-family: var(--font2);
-   font-size: 20px;
+   font-size: 30px;
    font-weight: 300;
    text-align: center;
 }
@@ -114,9 +110,49 @@ nav > a:hover{
     width: 900px;
     height: 400px;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-    
+    gap: 0px;
+    margin: 50px auto;
+    border-radius: 4px;
+}
+.detalhes > h2{
+    color: #1F6A73;
+    font-family: var(--font2);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.bloco > a{
+    content: "";
+    background-color: var(--cor3);
+    width: 700px;
+    height: 30px;
+    display: flex;
+    gap: 0px;
+    margin: auto;
+    margin-top: 330px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #00303C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    justify-content:center;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    padding: 1px;  
+}
+.footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
+}
+.footer > a{
+    color: var(--cor3);
+    text-decoration: none;
 }
 @media (max-width: 705px){
     .carousel-item{
@@ -142,14 +178,14 @@ nav > a:hover{
     nav{
         font-size: 17px;
     }
-}
-@media (min-width: 706px){
-    .cards{
-        justify-content: center;
+    .bloco{
+        width: 600px;
+        height: 300px;
     }
-    .card-title{
-        font-size: 30px;
-        font-weight: 300;
+    .bloco > a{
+        width: 500px;
+        height: 30px;
+        margin-top: 230px;
     }
 }
 @media (min-width: 706px) and (max-width: 1000px){
@@ -158,5 +194,21 @@ nav > a:hover{
     }
     nav{
         font-size: 20px;
+    }
+    .bloco{
+        width: 600px;
+        height: 300px;
+    }
+    .bloco > a{
+        width: 500px;
+        height: 30px;
+        margin-top: 230px;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .card-title{
+        font-size: 30px;
+        font-weight: 300px;
     }
 }
