@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+
+/*@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav>a {
+        text-align: end;
+        display: block;
+        float: none;
+        float: right;
+        display: block;
+        color: white;
+        margin: 0 5px 0 5px;
+        text-decoration: none;
+        justify-content: right;
+    }
+}*/
+
+:root{
+    --cor1: #00303C;
+    --cor2: #1F6A73;
+    --cor3: #FCF8F7;
+    --font1: Abel;
+    --font2: 'Jockey One';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel';
+}
+
+header {
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px; 
+    min-height: 100%;
+}
+/*Header*/
+header {
+    background-color: #00303C;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0 5px 0 5px;
+    flex: auto;
+    min-width: 100px;
+}
+
+header h1 {
+    font-size: 30px;
+    display: inline;
+    margin: 10px;
+    margin-top: 5px;
+    justify-content: right;
+    
+    font-family: var(--font1);
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 17px;
+    padding-top: 10px;
+    display: inline-block;
+    justify-content: left;
+}
+
+nav {
+    font-size: 18px;
+    float: right;
+    display: block;
+    margin-right: 16px;
+    min-height: 40px;
+    margin-top: 15px;
+}
+
+nav>a {
+    place-content: center;
+    float: right;
+    display: block;
+    color: white;
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    justify-content: right;
+}
+.cabecalho {
+    font-size: 'Abel', sans-serif;
+    background-color: #00303C;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    
+}
+.topnav{
+    overflow: hidden;
+    /*Controlando o conteúdo*/
+    background-color: #00303C;
+}
+
+ul{
+    list-style: url("../materialize/img/icons/icons8-instagram-24.png");
+}
+
+.ul2{
+    list-style-image: url("../materialize/img/icons/twitter.png");
+}
+.colEsq{
+    width: 30%;
+    font-size: 'Abel', sans-serif;
+}
+.footer{
+    
+    padding: 5px;
+    text-align: center;
+    background-color: #00303C;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.cardSocial{
+    padding: 5px;
+    text-align: center;
+    background-color: #00303C;
+    color: #ffff;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.cardQuem{
+    color: #1F6A73;
+    text-align: center;
+    margin-top: 10px;
+}
+.letra{
+    font-size: small;
+}
+/*header {
+    background-color: var(--cor1);
+    color: white;
+    padding: 20px; 
+    min-height: 100%;
+}*/
+/*header > h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+    margin-left: 17px;
+    padding-top: 10px;
+    display: inline-block;
+} */
+/*nav {
+    font-size: 18px;
+    float: right;
+    display: block;
+    margin-right: 16px;
+    min-height: 40px;
+    margin-top: 15px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+    min-height: 40px;
+}
+nav > a:hover{
+  background-color: var(--cor2);
+  color: #29d4c6;
+  padding: 15px;
+  border-radius: 4px;
+}*/
+
+/*.navigationBar-Acima {
+    display: flex;
+    background-color: #00303C;
+    padding: 0px;
+    height: 30px;
+
+}
+
+.navigationBar-Acima h1{
+    color: white;
+    justify-content: left;
+}
+h1{
+    color: white;
+    justify-content: left;
+}*/
