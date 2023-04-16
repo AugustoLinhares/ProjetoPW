@@ -71,7 +71,7 @@ nav > a:hover{
     left: 50px;
     z-index: 2;
     font-family: var(--font1);
-    font-size: 80px;
+    font-size: 70px;
     text-align: left;
     font-weight: normal;
     margin: auto;
@@ -109,9 +109,16 @@ nav > a:hover{
     background-color: #00303C;
     display: block;
 }
-
-
-@media (max-width: 700px){
+.bloco{
+    background-color: var(--cor2);
+    width: 900px;
+    height: 400px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+@media (max-width: 705px){
     .carousel-item{
         height: 20vh;
     }
@@ -136,12 +143,20 @@ nav > a:hover{
         font-size: 17px;
     }
 }
-@media (min-width: 701px){
+@media (min-width: 706px){
     .cards{
         justify-content: center;
     }
     .card-title{
         font-size: 30px;
         font-weight: 300;
-     }
+    }
+}
+@media (min-width: 706px) and (max-width: 1000px){
+    .textImg{
+        font-size: 50px;
+    }
+    nav{
+        font-size: 20px;
+    }
 }
