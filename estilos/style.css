@@ -40,12 +40,12 @@ header > h1 {
     display: inline-block;
 }
 nav {
-    font-size: 20px;
+    font-size: 28px;
     float: right;
     display: block;
     margin-right: 16px;
     min-height: 40px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 nav > a{
     text-decoration: none;
@@ -71,7 +71,7 @@ nav > a:hover{
     left: 50px;
     z-index: 2;
     font-family: var(--font1);
-    font-size: 50px;
+    font-size: 80px;
     text-align: left;
     font-weight: normal;
     margin: auto;
