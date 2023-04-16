@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2? família=Abel&display=swap');
 
+main{
+    padding: 0px;
+}
 :root{
     --cor1: #00303C;
     --cor2: #1F6A73;
@@ -8,12 +11,12 @@
     --font1: Abel;
     --font2: 'Jockey One';
 }
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Abel', sans-serif;
 }
+
 body {
     color: var(--cor1);
     background: var(--cor3);
@@ -83,9 +86,62 @@ nav > a:hover{
 .cards{
     display: flex;
     font-size: 10px;
-    
+    justify-content: flex-end;
 }
 .card{
     margin: 20px;
     border-radius: 0px;
+}
+.textMain{
+    color: #1F6A73;
+    font-family: var(--font2);
+    font-weight: bold;
+    padding: 20px 0px 0px 50px;
+}
+.card-title{
+   font-family: var(--font2);
+   font-size: 20px;
+   font-weight: 300;
+   text-align: center;
+}
+.bloco{
+    content: " ";
+    background-color: #00303C;
+    display: block;
+}
+
+
+@media (max-width: 700px){
+    .carousel-item{
+        height: 20vh;
+    }
+    .textImg{
+        font-size: 25px;
+        top: 90px;
+    }
+    main >h1{
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .cards{
+        display: grid;
+        width: 30rem;
+        justify-content: center;
+        padding-left: 0px;
+    }
+    header > h1{
+        font-size: 40px;
+    }
+    nav{
+        font-size: 17px;
+    }
+}
+@media (min-width: 701px){
+    .cards{
+        justify-content: center;
+    }
+    .card-title{
+        font-size: 30px;
+        font-weight: 300;
+     }
 }
