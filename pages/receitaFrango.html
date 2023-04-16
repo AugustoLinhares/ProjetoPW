@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/receitas.css">
+    <title>Document</title>
+
+</head>
+
+<style>
+    .img{
+        position: relative;
+        z-index: 1;
+    }
+    .img::after{
+        z-index: -1;
+        content: "";
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        background-image: url("/Imagens/pexels-jer-chung-2116094.jpg");
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+    
+    <header>
+        <h1>Agostine</h1> <!-- Cabeçalho -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Doces</a>
+            <a href="#">Salgados</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="img">
+
+            <div> <!-- Nome da receita -->
+                <br><h1>Panqueca</h1> <br>
+            </div>
+    
+            <div> <!-- Ingredientes -->
+                <h3>Ingredientes</h3>
+                
+                <ul>
+                    <li>1 ovo</li> <br>
+                    <li>1 colher (sopa) de óleo</li> <br>
+                    <li>1/2 xícara de leite</li> <br>
+                    <li>2 colheres (sopa) de açúcar</li> <br>
+                    <li>1 colher (chá) de sal</li><br>
+                    <li>1 xícara de farinha de trigo</li> <br>
+                    <li>1 colher (sopa) de fermento em pó</li> <br>
+                </ul>
+
+                <br>
+            </div>
+    
+            <div> <!-- Modo de preparo -->
+                <h3>Modo de preparo</h3>
+    
+                <ol>
+                    <li>Coloque o ovo, a colher de óleo e a xícara de leite dentro de um recipiente e mexa-os até que se tornem uma massa homogênea.</li> <br>
+                    <li>Adicione à massa o açúcar, o sal, a farinha de trigo e o fermento. Repita o processo do item anterior.</li> <br>
+                    <li>Unte uma frigideira à 200 °C com manteiga e deposite nela a massa da panqueca.</li> <br>
+                    <li>Vire a panqueca quando achar necessário virá-la.</li> <br>
+                    <li>Uma vez servida adicione complementos (como, por exemplo, o mel) a gosto.</li><br>
+                </ol>
+
+            </div>  
+        </div>
+
+    </main>
+
+    <footer> <!-- Rodapé -->
+        <p class="footer">Desenvolvido por <a href="#">TrupTech</a></p>
+    </footer>
+
+</body>
+</html>
