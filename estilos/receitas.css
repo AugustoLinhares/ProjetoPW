@@ -14,6 +14,12 @@
     font-family: 'Abel', sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: var(--cor1);
     color: white;
@@ -75,7 +81,7 @@ li{
 
 footer{
     z-index: 2;
-    align-items: end;
+    margin-top: auto;
     background-color: var(--cor1);
     color: white;
     padding: 1px;  
