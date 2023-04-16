@@ -56,6 +56,17 @@ nav > a:hover{
   padding: 15px;
   border-radius: 4px;
 }
+<<<<<<< HEAD
+=======
+article{
+  margin: auto;
+  width: 1000px;
+}
+main{
+  
+}
+
+>>>>>>> main
 .textImg{
   display: grid;
     gap: 20px;
@@ -72,6 +83,7 @@ nav > a:hover{
     font-weight: normal;
     margin: auto;
 }
+<<<<<<< HEAD
 /* -- carousel -- */
 .carousel-item {
     display: flex;
@@ -212,3 +224,11 @@ footer{
         font-weight: 300px;
     }
 }
+=======
+main{
+  background-color: var(--cor3);
+  border-radius: 4px;
+}
+
+  
+>>>>>>> main
