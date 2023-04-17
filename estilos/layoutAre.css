@@ -116,12 +116,7 @@ ul{
     width: 30%;
     font-size: 'Abel', sans-serif;
 }*/
-/*.colDir{
-    width: 100%;
-    padding-left: 80px;
-}*/
 .footer{
-    
     padding: 5px;
     text-align: center;
     background-color: #00303C;
@@ -154,28 +149,7 @@ main div {
     flex-wrap: wrap;
     gap: 30px;
 }
-/*main div img{
-    width: 179px;
-    height: 166px;
-    left: 192px;
-    top: 59px;
-    border-radius: 113px;
-    box-shadow: black 5px 5px 5px;
-    justify-content: left;
-}*/
 
-/*.imageCams{
-    /*margin-top: 10px;
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    border-radius: 20px;
-    width: 300px;
-    height: 200px;
-    box-shadow: black 5px 5px 5px;
-}*/ 
 .main-content {
     display: flex;
     justify-content: center;
@@ -188,11 +162,7 @@ img{
 }
 main p{
     justify-content: left;
-}
-.container{
-    display: flex;
-    align-items: center;
-}
+} 
 .conteudo{
     display: table;
 
@@ -208,4 +178,29 @@ main p{
     margin-top: 30px;
     margin-left: 50px;
 
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.Image {
+    float: right;
+    max-width: 40px;
+    max-height: 40px;
 }
