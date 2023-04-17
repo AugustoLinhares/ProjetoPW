@@ -94,11 +94,13 @@ nav > a:hover{
     font-weight: bold;
     padding: 20px 0px 0px 50px;
 }
-.card-title{
+.card-title > a{
    font-family: var(--font2);
    font-size: 30px;
    font-weight: 300;
    text-align: center;
+   text-decoration: none;
+   color: black;
 }
 .bloco{
     content: " ";
