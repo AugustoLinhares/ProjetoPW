@@ -179,8 +179,8 @@ main p{
     margin-left: 50px;
 
 }
+
 .row{
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -192,8 +192,8 @@ main p{
     margin: 20px;
     width: 400px;
     transition: all 0.3s ease-out;
+    display: flex;
 }
-
 .card:hover{
     transform: translateY(-5px);
     cursor: pointer;
@@ -204,3 +204,4 @@ main p{
     max-width: 40px;
     max-height: 40px;
 }
+
