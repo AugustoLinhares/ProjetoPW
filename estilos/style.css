@@ -334,13 +334,13 @@ footer {
             }
 
             .card-title {
-                .cards {
-                    justify-content: center;
-                }
+                justify-content: center;
+            }
 
-                .card-title {
-                    font-size: 30px;
-                    font-weight: 300px;
-                }
+            .card-title {
+                font-size: 30px;
+                font-weight: 300px;
             }
         }
+    }
+}
