@@ -115,7 +115,11 @@ ul{
 .colEsq{
     width: 30%;
     font-size: 'Abel', sans-serif;
-}
+}*/
+/*.colDir{
+    width: 100%;
+    padding-left: 80px;
+}*/
 .footer{
     
     padding: 5px;
@@ -137,61 +141,71 @@ ul{
     color: #1F6A73;
     text-align: center;
     margin-top: 10px;
+    justify-content: left;
 }
 .letra{
     font-size: small;
 }
-/*header {
-    background-color: var(--cor1);
-    color: white;
-    padding: 20px; 
-    min-height: 100%;
-}*/
-/*header > h1 {
-    font-family: 'Abel', sans-serif;
-    font-size: 3.5em;
-    font-weight: 400;
-    line-height: 10px;
-    text-align: left;
-    margin-left: 17px;
-    padding-top: 10px;
-    display: inline-block;
-} */
-/*nav {
-    font-size: 18px;
-    float: right;
-    display: block;
-    margin-right: 16px;
-    min-height: 40px;
-    margin-top: 15px;
-}
-nav > a{
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
-    transition-duration: 0.5s;
-    min-height: 40px;
-}
-nav > a:hover{
-  background-color: var(--cor2);
-  color: #29d4c6;
-  padding: 15px;
-  border-radius: 4px;
-}*/
 
-/*.navigationBar-Acima {
+main div {
+    margin-top: 30px;
     display: flex;
-    background-color: #00303C;
-    padding: 0px;
-    height: 30px;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-
-.navigationBar-Acima h1{
-    color: white;
-    justify-content: left;
-}
-h1{
-    color: white;
+/*main div img{
+    width: 179px;
+    height: 166px;
+    left: 192px;
+    top: 59px;
+    border-radius: 113px;
+    box-shadow: black 5px 5px 5px;
     justify-content: left;
 }*/
+
+/*.imageCams{
+    /*margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    box-shadow: black 5px 5px 5px;
+}*/ 
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 300px;
+    float: left;
+    margin-top: -30px;
+    margin-left: 50px;
+}
+main p{
+    justify-content: left;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.conteudo{
+    display: table;
+
+}
+.imagem{
+    display: table-cell;
+    float: left;
+}
+.texto{
+    display: table-cell;
+    float: left;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+
+}
