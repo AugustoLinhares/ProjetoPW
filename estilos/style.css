@@ -98,12 +98,114 @@ main > h1{
     padding: 30px 0px 0px 30px;
     font-size: 50px;
 }
+.card-title{
+   font-family: var(--font2);
+   font-size: 30px;
+   font-weight: 300;
+   text-align: center;
+}
+.card-title > a{
+    text-decoration: none;
+    font-size: var(--font2);
+    color: black;
+}
+.bloco{
+    content: " ";
+    background-color: #00303C;
+    display: block;
+}
+.bloco{
+    background-color: var(--cor2);
+    width: 900px;
+    height: 400px;
+    display: flex;
+    gap: 0px;
+    margin: 50px auto;
+    border-radius: 4px;
+}
+.detalhes > h2{
+    color: #1F6A73;
+    font-family: var(--font2);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+.bloco > a{
+    content: "";
+    background-color: var(--cor3);
+    width: 700px;
+    height: 30px;
+    display: flex;
+    gap: 0px;
+    margin: auto;
+    margin-top: 330px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #00303C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    justify-content:center;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    padding: 1px;  
+}
+.footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
+}
+.footer > a{
+    color: var(--cor3);
+    text-decoration: none;
+}
+@media (min-width: 706px) and (max-width: 1000px){
+    .carousel-item{
+        height: 20vh;
+    }
+    header > h1{
+        font-size: 40px;
+    }
+
+    .textImg{
+        font-size: 50px;
+    }
+    nav{
+        font-size: 20px;
+    }
+    .bloco{
+        width: 600px;
+        height: 300px;
+    }
+    .bloco > a{
+        width: 500px;
+        height: 30px;
+        margin-top: 230px;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .card-title{
+        font-size: 30px;
+        font-weight: 300px;
+    }
+    .bloco > a{
+        width: 500px;
+        height: 30px;
+        margin-top: 230px;
+    }
+
+}
 @media (min-width: 1800px){
 .cards{
-    padding: 0px 200px;
+    padding: 0px 500px;
 }
 }
-@media (mAX-width: 1500px){
+@media (max-width: 1500px){
     .carousel-item{
         height: 20vh;
     }
