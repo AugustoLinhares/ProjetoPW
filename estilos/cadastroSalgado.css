@@ -5,6 +5,7 @@
     --cor1: #00303C;
     --cor2: #1F6A73;
     --cor3: #FCF8F7;
+    --vermelho: rgb(228, 17, 17);
     --font1: Abel;
     --font2: 'Jockey One';
 }
@@ -73,6 +74,9 @@ footer{
 .footer > a{
     color: var(--cor3);
     text-decoration: none;
+}
+.mensagem-erro{
+    color: var(--vermelho);
 }
 @media (min-width: 706px) and (max-width: 1000px){
     header > h1{

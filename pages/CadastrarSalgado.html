@@ -17,29 +17,30 @@
           <a href="salgados.html">Salgados</a>
         </nav>
       </header>
-      <main class="container mt-3">
-        <form action="">
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <label for="nome" class="form-label">Título da receita:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" class="form-control" required maxlength="50" min="6">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <label for="nome" class="form-label">Descrição:</label>
-                    <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" class="form-control" required maxlength="200" min="6">
-                </div>
-            </div>         
-                <div class="col-12">
-                    <label for="filFoto" class="form-label">Adicione uma imagem da receita:</label>
-                    <input type="file" name="filFoto" id="filFoto" class="form-control" required accept="image/*">
-                </div>
-        </form>
+      <main>
+        <div class="container">
+            <form class="row g-3" method="post" enctype="multipart/form-data">
+                    <div class="col-12">
+                        <label for="nome" class="form-label">Título da receita:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" class="form-control" required maxlength="50" min="6">
+                        <span class="mensagem-erro" data-erro></span>
+                    </div>
+                    <div class="col-12">
+                        <label for="nome" class="form-label">Descrição:</label>
+                        <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" class="form-control" required maxlength="200" min="6">
+                        <span class="mensagem-erro" data-erro></span>
+                    </div>
+                    <div class="col-12">
+                        <label for="filFoto" class="form-label">Adicione uma imagem da receita:</label>
+                        <input type="file" name="filFoto" id="filFoto" class="form-control" required accept="image/*">
+                        <span class="mensagem-erro" data-erro></span>
+                    </div>
+            </form>
+        </div>
     </main>
       <footer>
         <p class="footer">Desenvolvido por <a href="are.html">TrupTech</a></p>
       </footer>
-    <script src="../js/scriptSalgado.js"></script>i
+    <script src="../js/scriptSalgado.js"></script>
 </body>
 </html>
