@@ -44,7 +44,7 @@ function validaCampo(campo){
     }
 }
 
-if (document.getElementById("Tipo").value == "0"){
+if (document.getElementById("Tipo").value === "0"){
     msnErro.textContent = "Selecione um campo";
 }else{
     msnErro.textContent="";
