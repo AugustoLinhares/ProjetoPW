@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll("[required]");
 inputs.forEach((elemento)=>{
     elemento.addEventListener("blur", (evento)=>{        
+            console.log(evento.target)
             validaCampo(evento.target)      
     });
 });
@@ -44,31 +45,31 @@ function validaCampo(campo){
     }
 }
 
-if (document.getElementById("Tipo").value === "0"){
-    msnErro.textContent = "Selecione um campo";
-}else{
-    msnErro.textContent="";
+const botoes = document.querySelectorAll("[data-item]");
+botoes.forEach((elemento)=>{
+    elemento.addEventListener("click", (evento)=>{
+        AtualizaItem(evento.target.textContent, evento.target.parentNode);
+    });
+
+});
+
+function AtualizaItem(acao, inputQtde){
+  const item = inputQtde.querySelector("[data-qtde]");
+  if(acao==="-"){
+        item.value = parseInt(item.value)-1;
+    }
+    else{
+        item.value = parseInt(item.value)+1;
+    }
+    
 }
 
-// function validar() {
-//     var facil = fOcorrencia.facil.value;
-//     var medio = fOcorrencia.medio.value;
-//     var dificil = fOcorrencia.dificil.value;
-    
-//     //captura o número de itens "selecionados"
-//     var Tipo = document.querySelectorAll('input[name="Tipo"]:checked').length;    
-  
-//     if (facil == "") {
-//         alert("Preencha todos os campos");
-//         return false;
-//     }
-//     if (medio == "") {
-//         alert("Preencha todos os campos");
-//         return false;
-//     }
-//     if (dificil == "") {
-//         alert("Preencha todos os campos");
-//         return false;
-//     }
-//     return true;
-// }
+function validate(){
+    const event = document.querySelector("#Tipo");
+    const event1 = document.querySelector("#Tipo1");
+    console.log(event.target);
+    //event.preventDefault();
+    if (document.getElementById("Tipo").value == "0") {
+        alert("Selecione um campo");
+    }    
+}

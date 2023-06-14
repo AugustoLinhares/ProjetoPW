@@ -58,8 +58,8 @@
                     </div>
                 </div>
 
-                <select class="form-select" aria-label="Default select example" name="Tipo">
-                  <option selected>Selecione a dificuldade</option>
+                <select class="form-select" aria-label="Default select example" name="Tipo" id="Tipo">
+                  <option value="0" selected>Selecione a dificuldade</option>
                   <option value="1" id="cfacil">Fácil</option>
                   <option value="2" id="cmedio">Médio</option>
                   <option value="3" id="cdificil">Dificil</option>
@@ -68,7 +68,7 @@
                 <div class="col-md-4 mb-3">
                   <span class="input-group-text">Quantidade de pessoas que serve a porção</span>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 mb-3">
 
                   <div class="input-group">
                       <button class="btn btn-outline-danger" type="button" data-item="-" >-</button>
@@ -77,10 +77,10 @@
                   </div>
               </div>
 
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Categoria da Receita</option>
+                <select class="form-select" aria-label="Default select example" name="Tipo" id="Tipo1">
+                  <option value="0" selected>Categoria da Receita</option>
                   <option value="1">Doce</option>
-                  <option value="2">Salgada</option>                  
+                  <option value="2">Salgada</option>            
                 </select>
 
                 <div class="col-12">
@@ -96,9 +96,8 @@
               </div>
 
               <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary" type="submit" onClick="validate()">Enviar</button>
               </div>
-
             </form>
         </div>
     </main>
