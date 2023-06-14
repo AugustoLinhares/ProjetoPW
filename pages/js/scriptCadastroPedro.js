@@ -1,33 +1,37 @@
-var formulario = document.querySelectorAll("form");
-const inputs = document.querySelectorAll("[required]");
-console.log(inputs);
+document.querySelector("form").addEventListener("submit", (event) => {
+    document.querySelectorAll("input").forEach(function (input) {
+        input.addEventListener("focus", function () {
+            const el = event.target || event.srcElement;
+            const id = el.id.substring(3);
 
-formulario.addEventListener("submit", (event) => {
-    if (document.getElementById("senha").value != document.getElementById("senha2").value) {
-        alert("Senhas não conferem!");
-        event.preventDefault();
-        console.log("Senhas não conferem!");
-    }
-    event.preventDefault();
+            if (event.target.value == "" || event.target.value == null) {
+                alert(id + " não informado");
+                event.preventDefault();
+            }
+
+            console.log(id);
+        });
+    });
+
+    document.querySelectorAll("select").forEach(function (select) {
+        if (select.value == "" || select.value == null) {
+            alert("Selecione um item da lista");
+            select.focus();
+            event.preventDefault();
+        }
+    });
 });
 
-function alerta() {
-    alert("Cadastro realizado com sucesso!");
-}
 
+const inputs = document.querySelectorAll("input");
 inputs.forEach((input) => {
-    elemento.addEventListener("blur", (event) => {
-        if (event.target.value === "txtNome") {
-            console.log(evento.target.maxlenght);
+    console.log("input", input)
+    input.addEventListener("blur", (event) => {
+        if (event.target.value == "" || event.target.value == null) {
+            alert("Campo não informado");
+            event.preventDefault();
+            input.focus();
         }
+    });
+});
 
-
-// function verificarUsuario(){
-//     if(document.getElementById("usuarioLogin").value != "admin"){
-//         alert("Usuário já cadastrado!");
-//     }
-//     else{
-//         document.getElementById("usuarioLogin") = "";
-//     }
-//     event.preventDefault();
-// }
