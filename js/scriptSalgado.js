@@ -68,7 +68,6 @@ function validate(){
     const event = document.querySelector("#Tipo");
     const event1 = document.querySelector("#Tipo1");
     console.log(event.target);
-    //event.preventDefault();
     if (document.getElementById("Tipo").value == "0") {
         alert("Selecione um campo");
     }    
