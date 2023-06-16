@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/receitas.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estiloPedroAvaliarReceita.css">
 
 </head>
 
@@ -37,6 +38,18 @@
 
 <body>
 
+    <div id="ovrly"></div>
+    <div id="avaliacao">
+        <form class="AvaliarReceita" action="">
+            <h2>Sua opinião é preciosa. Obrigado !
+            </h2>
+            <img style="width:30px; height:30px ;" src="../Imagens/ImagensPedro/estrela.png" alt="" srcset="">
+            <label for="Seu comentario"></label>
+            <input type="text" name="" id="">
+            <button onclick="off()">Publicar</button>
+        </form>
+    </div>
+
     <header>
         <h1>Agostine</h1> <!-- Cabeçalho -->
         <nav>
@@ -51,12 +64,14 @@
 
         <div class="img">
 
-            <div> <!-- Nome da receita -->
+            <div>
+                <!-- Nome da receita -->
                 <br>
                 <h1>Panqueca</h1> <br>
             </div>
 
-            <div> <!-- Ingredientes -->
+            <div>
+                <!-- Ingredientes -->
                 <h3>Ingredientes</h3>
 
                 <ul>
@@ -72,7 +87,8 @@
                 <br>
             </div>
 
-            <div> <!-- Modo de preparo -->
+            <div>
+                <!-- Modo de preparo -->
                 <h3>Modo de preparo</h3>
 
                 <ol>
@@ -90,9 +106,11 @@
 
     </main>
 
-    <footer> <!-- Rodapé -->
+    <footer>
+        <!-- Rodapé -->
         <p class="footer">Desenvolvido por <a href="#">TrupTech</a></p>
     </footer>
+    <script src="js/scriptAvaliacaoPedro.js"></script>
 
 </body>
 

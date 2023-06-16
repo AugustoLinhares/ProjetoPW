@@ -1,3 +1,5 @@
+//Feito Por Pedro Henrique de Melo Batista
+
 document.querySelector("form").addEventListener("submit", (event) => {
     document.querySelectorAll("input").forEach(function (input) {
         input.addEventListener("focus", function () {
