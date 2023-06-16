@@ -43,6 +43,13 @@ function validaCampo(campo){
             msnErro.textContent="";
         }
     }
+    if(campo.name === "tempero"){
+        if(campo.value.length<5){
+            msnErro.textContent = "Digite os temperos";
+        }else{
+            msnErro.textContent="";
+        }
+    }
 }
 
 const botoes = document.querySelectorAll("[data-item]");
@@ -66,8 +73,7 @@ function AtualizaItem(acao, inputQtde){
 
 function validate(){
     const event = document.querySelector("#Tipo");
-    const event1 = document.querySelector("#Tipo1");
-    console.log(event.target);
+    //console.log(event.target);
     if (document.getElementById("Tipo").value == "0") {
         alert("Selecione um campo");
     }    
