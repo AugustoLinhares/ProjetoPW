@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>   
-    <link rel="stylesheet" href="../estilos/cadastroSalgado.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../estilos/cadastroSalgado.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <style>
-      main{
-        padding: 30px;
-      }
-    </style>
+  <style>
+    main {
+      padding: 30px;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- KEWILLEM NIKOLY LEME GONÇALVES -->
-    <header>
-        <h1>Agostine</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="#">Quem somos</a>
-          <a href="#">Doces</a>
-          <a href="salgados.html">Salgados</a>
-        </nav>
-      </header>
-      <main>
-        <div class="container">
-            <form class="row g-3" method="post" enctype="multipart/form-data">
-                    <div class="col-12">
-                        <label for="nome" class="form-label">Título da receita:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" class="form-control" required maxlength="50" min="6">
-                        <span class="mensagem-erro" data-erro></span>
-                    </div>
+  <!-- KEWILLEM NIKOLY LEME GONÇALVES -->
+  <header>
+    <h1>Agostine</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="are.html">Quem somos</a>
+      <a href="doces.html">Doces</a>
+      <a href="salgados.html">Salgados</a>
+      <a href="cadastroUsuario.html">Se cadastrar</a>
 
-                    <div class="col-12">
-                        <label for="nome" class="form-label">Descrição:</label>
-                        <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" class="form-control" required maxlength="200" min="6">
-                        <span class="mensagem-erro" data-erro></span>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="filFoto" class="form-label">Adicione uma imagem da receita:</label>
-                        <input type="file" name="filFoto" id="filFoto" class="form-control" required accept="image/*">
-                        <span class="mensagem-erro" data-erro></span>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="nome" class="form-label">Ingredientes:</label>
-                      <input type="text" name="ingrediente" id="ingrediente" placeholder="Digite os ingredientes" class="form-control" required maxlength="200" min="6">
-                      <span class="mensagem-erro" data-erro></span>
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <span class="input-group-text">Tempo de preparo</span>
-                </div>
-                <div class="col-md-2">
-  
-                    <div class="input-group">
-                        <button class="btn btn-outline-danger" type="button" data-item="-" >-</button>
-                        <input type="text" class="form-control text-center" value="0" data-qtde >
-                        <button class="btn btn-outline-success" type="button" data-item="+" >+</button>
-                    </div>
-                </div>
-
-                <select class="form-select" aria-label="Default select example" name="Tipo" id="Tipo">
-                  <option value="0" selected>Selecione a dificuldade</option>
-                  <option value="1" id="cfacil">Fácil</option>
-                  <option value="2" id="cmedio">Médio</option>
-                  <option value="3" id="cdificil">Dificil</option>
-                </select>
-                
-                <div class="col-md-4 mb-3">
-                  <span class="input-group-text">Quantidade de pessoas que serve a porção</span>
-              </div>
-              <div class="col-md-2 mb-3">
-
-                  <div class="input-group">
-                      <button class="btn btn-outline-danger" type="button" data-item="-" >-</button>
-                      <input type="text" class="form-control text-center" value="0" data-qtde >
-                      <button class="btn btn-outline-success" type="button" data-item="+" >+</button>
-                  </div>
-              </div>
-
-              <div class="col-12">
-                <label for="nome" class="form-label">Digite os tempero utilizados:</label>
-                <input type="text" name="tempero" id="tempero" placeholder="Digite os temperos" class="form-control" required maxlength="200" min="6">
-                <span class="mensagem-erro" data-erro></span>                   
-              </div>
-
-                <div class="col-12">
-                  <label for="nome" class="form-label">Passo a passo da receita:</label>
-                  <input type="text" name="passos" id="passos" placeholder="Digite o passo a passo" class="form-control" required maxlength="200" min="6">
-                  <span class="mensagem-erro" data-erro></span>                   
-                </div>
-
-                <div class="col-12">
-                  <label for="nome" class="form-label">Informações adicionais:</label>
-                  <input type="text" name="informacao" id="informacao" placeholder="Digite Informações adicionais da receita" class="form-control" required maxlength="200" min="6">
-                  <span class="mensagem-erro" data-erro></span>                   
-              </div>
-
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit" onClick="validate()">Enviar</button>
-              </div>
-            </form>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <form class="row g-3" method="post" enctype="multipart/form-data">
+        <div class="col-12">
+          <label for="nome" class="form-label">Título da receita:</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" class="form-control" required
+            maxlength="50" min="6">
+          <span class="mensagem-erro" data-erro></span>
         </div>
-    </main>
-      <footer>
-        <p class="footer">Desenvolvido por <a href="are.html">TrupTech</a></p>
-      </footer>
-    <script src="../js/scriptSalgado.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+
+        <div class="col-12">
+          <label for="nome" class="form-label">Descrição:</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" class="form-control"
+            required maxlength="200" min="6">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-12">
+          <label for="filFoto" class="form-label">Adicione uma imagem da receita:</label>
+          <input type="file" name="filFoto" id="filFoto" class="form-control" required accept="image/*">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-12">
+          <label for="nome" class="form-label">Ingredientes:</label>
+          <input type="text" name="ingrediente" id="ingrediente" placeholder="Digite os ingredientes"
+            class="form-control" required maxlength="200" min="6">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <span class="input-group-text">Tempo de preparo</span>
+        </div>
+        <div class="col-md-2">
+
+          <div class="input-group">
+            <button class="btn btn-outline-danger" type="button" data-item="-">-</button>
+            <input type="text" class="form-control text-center" value="0" data-qtde>
+            <button class="btn btn-outline-success" type="button" data-item="+">+</button>
+          </div>
+        </div>
+
+        <select class="form-select" aria-label="Default select example" name="Tipo" id="Tipo">
+          <option value="0" selected>Selecione a dificuldade</option>
+          <option value="1" id="cfacil">Fácil</option>
+          <option value="2" id="cmedio">Médio</option>
+          <option value="3" id="cdificil">Dificil</option>
+        </select>
+
+        <div class="col-md-4 mb-3">
+          <span class="input-group-text">Quantidade de pessoas que serve a porção</span>
+        </div>
+        <div class="col-md-2 mb-3">
+
+          <div class="input-group">
+            <button class="btn btn-outline-danger" type="button" data-item="-">-</button>
+            <input type="text" class="form-control text-center" value="0" data-qtde>
+            <button class="btn btn-outline-success" type="button" data-item="+">+</button>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="nome" class="form-label">Digite os tempero utilizados:</label>
+          <input type="text" name="tempero" id="tempero" placeholder="Digite os temperos" class="form-control" required
+            maxlength="200" min="6">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-12">
+          <label for="nome" class="form-label">Passo a passo da receita:</label>
+          <input type="text" name="passos" id="passos" placeholder="Digite o passo a passo" class="form-control"
+            required maxlength="200" min="6">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-12">
+          <label for="nome" class="form-label">Informações adicionais:</label>
+          <input type="text" name="informacao" id="informacao" placeholder="Digite Informações adicionais da receita"
+            class="form-control" required maxlength="200" min="6">
+          <span class="mensagem-erro" data-erro></span>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" onClick="validate()">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p class="footer">Desenvolvido por <a href="are.html">TrupTech</a></p>
+  </footer>
+  <script src="../js/scriptSalgado.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
 </body>
+
 </html>

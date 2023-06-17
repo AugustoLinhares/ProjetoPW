@@ -2,7 +2,7 @@
 
 
 #btn {
-    background-color: #2ecc71;
+    background-color: #0014f0;
     border: none;
     padding: 7px;
     color: #fff;
@@ -13,8 +13,8 @@
 
 #btn:hover {
     background-color: #fff;
-    color: #2ecc71;
-    border: 2px solid #2ecc71
+    color: #01043a;
+    border: 2px solid #1b1e62
 }
 
 #ovrly {
@@ -30,7 +30,7 @@
     background-color: #fff;
     width: 30%;
     margin: auto;
-    border: 3px solid #2ecc71;
+    border: 3px solid #0014f0;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -67,7 +67,7 @@ input[type="button"] {
 .pswd {
     background-color: #fff;
     display: block;
-    border: 2px solid #2ecc71;
+    border: 2px solid #0014f0;
     border-radius: 10px;
     padding: 5px;
     margin: auto;
