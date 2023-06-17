@@ -30,10 +30,8 @@ inputs.forEach((input) => {
     console.log("input", input)
     input.addEventListener("blur", (event) => {
         if (event.target.value == "" || event.target.value == null) {
-            alert("Campo não informado");
             event.preventDefault();
             input.focus();
         }
     });
 });
-
