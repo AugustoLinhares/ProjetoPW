@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/receitas.css">
+    <link rel="stylesheet" href="../estilos/receitas.css">
     <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estiloPedroAvaliarReceita.css">
 
 </head>
 
@@ -23,7 +24,7 @@
         height: auto;
         width: 100%;
         display: flex;
-        background-image: url("/Imagens/pexels-ash-376464.jpg");
+        background-image: url("../Imagens/pexels-ash-376464.jpg");
         background-size: cover;
         position: absolute;
         top: 0px;
@@ -37,26 +38,41 @@
 
 <body>
 
+    <div id="ovrly"></div>
+    <div id="avaliacao">
+        <form class="AvaliarReceita" action="">
+            <h2>Sua opinião é preciosa. Obrigado !
+            </h2>
+            <img style="width:30px; height:30px ;" src="../Imagens/ImagensPedro/estrela.png" alt="" srcset="">
+            <label for="Seu comentario"></label>
+            <input type="text" name="" id="">
+            <button onclick="off()">Publicar</button>
+        </form>
+    </div>
+
     <header>
         <h1>Agostine</h1> <!-- Cabeçalho -->
         <nav>
             <a href="index.html">Home</a>
-            <a href="are.html">Quem Somos</a>
+            <a href="are.html">Quem somos</a>
             <a href="doces.html">Doces</a>
             <a href="salgados.html">Salgados</a>
-        </nav>
+            <a href="cadastroUsuario.html">Se cadastrar</a>
     </header>
 
     <main>
 
         <div class="img">
 
-            <div> <!-- Nome da receita -->
+            <div style="display:flex ;gap: 20px;">
+                <!-- Nome da receita -->
                 <br>
                 <h1>Panqueca</h1> <br>
+                <button id="btn" onclick="on()">Avalie essa receita</button>
             </div>
 
-            <div> <!-- Ingredientes -->
+            <div>
+                <!-- Ingredientes -->
                 <h3>Ingredientes</h3>
 
                 <ul>
@@ -72,7 +88,8 @@
                 <br>
             </div>
 
-            <div> <!-- Modo de preparo -->
+            <div>
+                <!-- Modo de preparo -->
                 <h3>Modo de preparo</h3>
 
                 <ol>
@@ -90,9 +107,11 @@
 
     </main>
 
-    <footer> <!-- Rodapé -->
-        <p class="footer">Desenvolvido por <a href="are.html">TrupTech</a></p>
+    <footer>
+        <!-- Rodapé -->
+        <p class="footer">Desenvolvido por <a href="#">TrupTech</a></p>
     </footer>
+    <script src="js/scriptAvaliacaoPedro.js"></script>
 
 </body>
 

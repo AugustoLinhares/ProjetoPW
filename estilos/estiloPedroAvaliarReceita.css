@@ -1,0 +1,75 @@
+/* Feito Por Pedro Henrique de Melo Batista */
+
+
+#btn {
+    background-color: #0014f0;
+    border: none;
+    padding: 7px;
+    color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 16
+}
+
+#btn:hover {
+    background-color: #fff;
+    color: #01043a;
+    border: 2px solid #1b1e62
+}
+
+#ovrly {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0.7;
+}
+
+#avaliacao {
+    background-color: #fff;
+    width: 30%;
+    margin: auto;
+    border: 3px solid #0014f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -310px;
+}
+
+#ovrly,
+#avaliacao {
+    display: none;
+}
+
+#cross {
+    position: absolute;
+    left: 94%;
+    top: 0px;
+    color: #cc2e2e;
+    font-size: 18;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0
+}
+
+h1 {
+    margin-top: 0px
+}
+
+form,
+input[type="button"] {
+    margin: 0 !important
+}
+
+.txt,
+.pswd {
+    background-color: #fff;
+    display: block;
+    border: 2px solid #0014f0;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 15px
+}

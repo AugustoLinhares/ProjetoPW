@@ -1,41 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos/styleCamila.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Temperos</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/are.html">Quem somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/salgados.html">receitas salgadas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/doces.html">receitas doces</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/temperos.html">Temperos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <header>
+        <h1>Agostine</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="are.html">Quem somos</a>
+            <a href="doces.html">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="cadastroUsuario.html">Se cadastrar</a>
+        </nav>
+    </header>
+    <main>
+
+        <form id="form">
+
+            <div class="container">
+                <div class="form-grup">
+                    <label>Nome do tempero:</label>
+                    <input class="form-control" required name="nome" type="text" name="nome" id="nome" placeholder="Digite aqui...">
+                    <span class="mensagem-erro" data-erro=""></span>
+
+                </div>
+
+                <div class="form-grup">
+                    <class class="largura">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <label for="">Cidade de Origem:</label>
+                                    <input class="form-control" required name="cidade" type="text" name="cidade" id="cidade" placeholder="Digite aqui...">
+                                    <span class="mensagem-erro" data-erro=""></span>    
+                                </div>
+                                
+                                <div>
+                                    <label for="">Estado de Origem:</label>
+                                    <input class="form-control" required name="estado" type="text" name="estado" id="estado" placeholder="Digite aqui...">
+                                    <span class="mensagem-erro" data-erro=""></span>    
+                                </div>
+                                
+                                <div>
+                                    <label for="">País de Origem:</label>
+                                    <input class="form-control" required name="pais" type="text" name="" id="pais" placeholder="Digite aqui...">
+                                    <span class="mensagem-erro" data-erro=""></span>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                    </class>
+
+                </div>
+
+                <div class="textareas">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descrição do Tempero</label>
+                        <textarea class="form-control" required name="input" id="descricao" name="input" rows="5" ></textarea>
+                        <span class="mensagem-erro" data-erro=""></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Componentes</label>
+                        <textarea class="form-control" required name="input" id="componentes" name="input" rows="5"></textarea>
+                        <span class="mensagem-erro" data-erro=""></span>
+                    </div>
+
+                </div>
+
+                <button style="margin: 15px 0;" type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="js/temperos.js"></script>
 </body>
+
 </html>
