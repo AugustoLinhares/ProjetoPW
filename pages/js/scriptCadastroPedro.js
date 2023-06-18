@@ -5,7 +5,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
             const el = event.target || event.srcElement;
             const id = el.id.substring(3);
 
-            if (event.target.value == "" || event.target.value == null || document.querySelector("#paragrafoErroEmail").style.display == "Block" || !TestaCPF(cpf.value) || document.querySelector("#paragrafoErroSenha").style.display == "Block" || document.querySelector('#paragrafoErroData').style.display == "Block") {
+            if (event.target.value == "" || event.target.value == null || document.querySelector("#paragrafoErroEmail").style.display == "Block" || !TestaCPF(cpf.value) || document.querySelector("#paragrafoErroSenha").style.display == "Block" || document.querySelector('#paragrafoErroData').style.display == "Block" || document.querySelector("#paraErroCpf").style.display == "Block") {
                 event.preventDefault();
             }
 
@@ -88,9 +88,11 @@ cpf.addEventListener("keypress", () => {
 cpf.addEventListener("blur", () => {
     if (!TestaCPF(cpf.value)) {
         console.log("CPF inválido");
+        document.querySelector("#paragrafoErroCpf").style.display = "Block";
     }
     else {
         console.log("CPF válido");
+        document.querySelector("#paragrafoErroCpf").style.display = "none";
     }
 })
 
@@ -127,7 +129,7 @@ function retirarMascara(cpf) {
 
 //Validar Data
 const data = document.querySelector("#dataNascimento");
-dataNascimento.addEventListener("blur", () => {
+data.addEventListener("blur", () => {
 
     console.log(data.value);
     if (validarData(data.value)) {
