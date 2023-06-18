@@ -1,3 +1,6 @@
+
+// Feito por Camila Ortolane
+
 const input = document.querySelectorAll("[required]");
 const textarea = document.querySelectorAll("[required]");
 
