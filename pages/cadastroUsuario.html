@@ -31,32 +31,42 @@
 
             <p>
                 <label class="form-label">Nome:</label>
-                <input required required maxlength=50 class="form-control" id="usuarioLogin" type="text">
+                <input required maxlength=50 class="form-control" id="usuarioLogin" type="text">
             </p>
             <p>
-                <label class="form-label">Sobrenome: <input required class="form-control" type="text"></label>
+                <label class="form-label">Sobrenome: <input required class="form-control" maxlength=50
+                        type="text"></label>
             </p>
             <p>
-                <label class="form-label">Email: <input required class="form-control" type="text"></label>
+                <label class="form-label">Email: <input required class="form-control" id="email" type="text"></label>
+            </p>
+            <p>
+                <label class="form-label">Confirme seu email: <input required class="form-control" id="verificarEmail"
+                        type="text"></label>
+            </p>
+            <p id="paragrafoErroEmail" style="color: red; padding: 0; margin-top: 0;display: none;">Emails não conferem
             </p>
             <p>
                 <label class="form-label">CPF: </label>
-                <input required class="form-control" type="text">
+                <input required class="form-control cpf" maxlength="14" type="text">
             </p>
-            <p>
-                <label class="form-label">Confirme seu email: <input required class="form-control" type="text"></label>
-            </p>
+
             <p>
                 <label class="form-label" aria-labelledby="passwordHelpBlock">Senha: </label>
                 <input required id="senha" class="form-control" type="password">
             </p>
             <p>
                 <label class="form-label" aria-labelledby="passwordHelpBlock">Confirme a sua senha: </label>
-                <input required id="senha2" class="form-control" type="password">
+                <input required id="verificarSenha" class="form-control" type="password">
+            </p>
+            <p id="paragrafoErroSenha" style="color: red; padding: 0; margin-top: 0;display: none;">Senhas não conferem
             </p>
             <p>
-                <label class="form-label">Data de Nascimento:</label> <input required class="form-control" type="date">
+                <label class="form-label">Data de Nascimento:</label> <input required class="form-control"
+                    id="dataNascimento" type="date">
             </p>
+            <p id="paragrafoErroData" style="color: red; padding: 0; margin-top: 0;display: none;">Data Incoerente</p>
+
             <fieldset>
                 <legend>Genêro:</legend>
                 <p>
