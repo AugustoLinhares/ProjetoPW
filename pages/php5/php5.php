@@ -1,5 +1,5 @@
 <?php 
-$_con = mysqli_connect('127.0.0.1','root','','conexao');
+$_con = mysqli_connect('127.0.0.1','root','','php5');
 if($_con===FALSE) {
  echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {
