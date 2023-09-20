@@ -6,14 +6,14 @@ if($_conn===FALSE) {
  echo "Foi possível conectar ao Servidor de banco de dados ";
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_METHOD"] == "FILES") {
 
     
     
     $Titulo = $_POST["Titulo"];
     $Adicional = $_POST["Adicional"];
     $Descricao = $_POST["Descricao"];
-    $Imagem = $_POST["Imagem"];
+    $Imagem = $_FILES["Imagem"];
     $Ingrediente = $_POST["Ingrediente"];
     $TempoPrep = $_POST["TempoPrep"];
     $Dificuldade = $_POST["Dificuldade"];
