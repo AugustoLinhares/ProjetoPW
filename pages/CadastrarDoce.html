@@ -30,30 +30,30 @@
   </header>
   <main>
     <div class="container">
-      <form class="row g-3" method="post" enctype="multipart/form-data">
+      <form class="row g-3" method="POST" enctype="multipart/form-data" action="php5/cadastrarDoce.php">
         <div class="col-12">
-          <label for="nome" class="form-label">Título da receita:</label>
-          <input type="text" name="nome" id="nome" placeholder="Digite o nome da receita" class="form-control" required
+          <label for="Titulo" class="form-label">Título da receita:</label>
+          <input type="text" name="Titulo" id="Titulo" placeholder="Digite o nome da receita" class="form-control" required
             maxlength="50" min="6">
           <span class="mensagem-erro" data-erro></span>
         </div>
 
         <div class="col-12">
-          <label for="nome" class="form-label">Descrição:</label>
-          <input type="text" name="descricao" id="descricao" placeholder="Digite a Descrição" class="form-control"
+          <label for="Descricao" class="form-label">Descrição:</label>
+          <input type="text" name="Descricao" id="Descricao" placeholder="Digite a Descrição" class="form-control"
             required maxlength="200" min="6">
           <span class="mensagem-erro" data-erro></span>
         </div>
 
         <div class="col-12">
-          <label for="filFoto" class="form-label">Adicione uma imagem da receita:</label>
-          <input type="file" name="filFoto" id="filFoto" class="form-control" required accept="image/*">
+          <label for="Imagem" class="form-label">Adicione uma imagem da receita:</label>
+          <input type="file" name="Imagem" id="Imagem" class="form-control" required accept="image/*">
           <span class="mensagem-erro" data-erro></span>
         </div>
 
         <div class="col-12">
-          <label for="nome" class="form-label">Ingredientes:</label>
-          <input type="text" name="ingrediente" id="ingrediente" placeholder="Digite os ingredientes"
+          <label for="Ingrediente" class="form-label">Ingredientes:</label>
+          <input type="text" name="Ingrediente" id="Ingrediente" placeholder="Digite os ingredientes"
             class="form-control" required maxlength="200" min="6">
           <span class="mensagem-erro" data-erro></span>
         </div>
@@ -65,12 +65,12 @@
 
           <div class="input-group">
             <button class="btn btn-outline-danger" type="button" data-item="-">-</button>
-            <input type="text" class="form-control text-center" value="0" data-qtde>
+            <input type="text" class="form-control text-center" value="0" data-qtde for="TempoPrep" name="TempoPrep" id="TempoPrep">
             <button class="btn btn-outline-success" type="button" data-item="+">+</button>
           </div>
         </div>
 
-        <select class="form-select" aria-label="Default select example" name="Tipo" id="Tipo">
+        <select class="form-select" aria-label="Default select example" name="Dificuldade" id="Dificuldade" for="Dificuldade">
           <option value="0" selected>Selecione a dificuldade</option>
           <option value="1" id="cfacil">Fácil</option>
           <option value="2" id="cmedio">Médio</option>
@@ -84,28 +84,21 @@
 
           <div class="input-group">
             <button class="btn btn-outline-danger" type="button" data-item="-">-</button>
-            <input type="text" class="form-control text-center" value="0" data-qtde>
+            <input type="text" class="form-control text-center" value="0" data-qtde for="Porcao" name="Porcao" id="Porcao">
             <button class="btn btn-outline-success" type="button" data-item="+">+</button>
           </div>
         </div>
 
         <div class="col-12">
-          <label for="nome" class="form-label">Digite os tempero utilizados:</label>
-          <input type="text" name="tempero" id="tempero" placeholder="Digite os temperos" class="form-control" required
-            maxlength="200" min="6">
-          <span class="mensagem-erro" data-erro></span>
-        </div>
-
-        <div class="col-12">
-          <label for="nome" class="form-label">Passo a passo da receita:</label>
-          <input type="text" name="passos" id="passos" placeholder="Digite o passo a passo" class="form-control"
+          <label for="Passo" class="form-label">Passo a passo da receita:</label>
+          <input type="text" name="Passo" id="Passo" placeholder="Digite o passo a passo" class="form-control"
             required maxlength="200" min="6">
           <span class="mensagem-erro" data-erro></span>
         </div>
 
         <div class="col-12">
-          <label for="nome" class="form-label">Informações adicionais:</label>
-          <input type="text" name="informacao" id="informacao" placeholder="Digite Informações adicionais da receita"
+          <label for="Adicional" class="form-label">Informações adicionais:</label>
+          <input type="text" name="Adicional" id="Adicional" placeholder="Digite Informações adicionais da receita"
             class="form-control" required maxlength="200" min="6">
           <span class="mensagem-erro" data-erro></span>
         </div>
