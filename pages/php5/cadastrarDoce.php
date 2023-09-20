@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
  
 
-    $sql = "INSERT INTO receita VALUES (null, '$Titulo', '$Adicional', '$Descricao', null, '$Ingrediente', '$TempoPrep', '$Dificuldade', '$Porcao', '$Passo', '$Fk');";
+    $sql = "INSERT INTO receita VALUES (null, '$Titulo', '$Adicional', '$Descricao', '$Imagem', '$Ingrediente', '$TempoPrep', '$Dificuldade', '$Porcao', '$Passo', '$Fk');";
 
 
 
