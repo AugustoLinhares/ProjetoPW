@@ -1,5 +1,7 @@
 <?php 
+
 $_conn = mysqli_connect('127.0.0.1','root','','php5');
+echo $_conn;
 if($_conn===FALSE) {
  echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {
@@ -8,7 +10,7 @@ if($_conn===FALSE) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_METHOD"] == "FILES") {
 
-    
+    require_once('php5.php');
     
     $Titulo = $_POST["Titulo"];
     $Adicional = $_POST["Adicional"];
@@ -19,18 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_METHOD"] == "FILES
     $Dificuldade = $_POST["Dificuldade"];
     $Porcao = $_POST["Porcao"];
     $Passo = $_POST["Passo"];
-    // $Fk = $_POST["id_usu_fk"];
-    $Fk = 0;
+    $Fk = $_POST["id_usu_fk"];
+    
 
  
 
     $sql = "INSERT INTO receita VALUES (null, '$Titulo', '$Adicional', '$Descricao', '$Imagem', '$Ingrediente', '$TempoPrep', '$Dificuldade', '$Porcao', '$Passo', '$Fk');";
 
 
-
+    
     if ($_conn->query($sql) === TRUE) {
         echo"Dados inseridos com sucesso!";
-    } else {
+    } 
+    else {
         echo"Erro na inserção: " . $_conn->error;
     }
 
