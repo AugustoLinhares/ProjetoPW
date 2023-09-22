@@ -15,8 +15,9 @@ else {
     $Dificuldade = $_POST["Dificuldade"];
     $Porcao = $_POST["Porcao"];
     $Passo = $_POST["Passo"];
+    $id_usu_fk = $_POST["id_usu_fk"];
     
-    $sql = "INSERT INTO receita (Titulo, Adicional,	Descricao,	Ingrediente, TempoPrep,	Dificuldade, Porcao, Passo) VALUES ('$Titulo', '$Adicional', '$Descricao', '$Ingrediente', '$TempoPrep', '$Dificuldade', '$Porcao', '$Passo');";
+    $sql = "INSERT INTO receita (Titulo, Adicional,	Descricao,	Ingrediente, TempoPrep,	Dificuldade, Porcao, Passo) VALUES ('$Titulo', '$Adicional', '$Descricao', '$Ingrediente', '$TempoPrep', '$Dificuldade', '$Porcao', '$Passo', null);";
     
     if ($_conn->query($sql) === TRUE) {
         echo"Dados inseridos com sucesso!";
