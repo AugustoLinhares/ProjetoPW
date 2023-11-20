@@ -1,0 +1,8 @@
+a.botao.seta{
+    background: #1F6A73!important;
+    color: #fff!important;
+}
+
+a.botao.seta:hover{
+    background: #027D9B!important;
+}

@@ -1,7 +1,10 @@
 /* Feito Por Pedro Henrique de Melo Batista */
 @charset "UTF-8";
 @import "./estilosPedro2.css";
+@import "./estilosPedroPlanos.css";
 @import "./estilosPedroPlanoInterno.css";
+@import "./estilosPedroOrcamentoPlano.css";
+
 
 @import url('https://fonts.googleapis.com/css2? família=Abel&display=swap');
 main {

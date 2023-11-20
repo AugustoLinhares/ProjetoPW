@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orçamento | Bikcraft</title>
+    <meta name="description" content="Orçamento.">
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="preload" href="../css/style.min.css" as="style">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="orcamento">
+    <header style="background-color: #032C36;
+    ;" class="header-bg">
+        <div class="header container">
+            <a href="./">
+                <img src="../Imagens/ImagensPedro/iconesPlanos/Agostinhe.svg" alt="Bikcraft">
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="are.html">Quem somos</a>
+                <a href="doces.html">Doces</a>
+                <a href="salgados.html">Salgados</a>
+                <a href="cadastroUsuario.html">Se cadastrar</a>
+                <a href="planos.html">Planos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="titulo-bg">
+            <div class="titulo container">
+                <p class="font-2-l-b cor-5">Cotações no seu email</p>
+                <h1 class="font-1-xxl cor-0">solicite um orçamento</h1>
+            </div>
+        </div>
+
+        <form class="orcamento container" action="./enviar.php" method="post">
+            <div class="orcamento-produto">
+                <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                    <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+
+                    <input type="radio" name="produto" value="nimbus" id="nimbus">
+                    <label for="nimbus">Plano junior <span>R$ 150</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-xs cor-8">
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/desconto.svg" alt=""> Descontos de até
+                                50% em nossos e-books</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/acesso.svg" alt=""> 1 mês de acesso total
+                                a plataforma</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/dispositivo.svg" alt=""> 1 dispositivo
+                            </li>
+                        </ul>
+                        <img src="../Imagens/ImagensPedro/imagensPlanos/planojunior.png" alt="Bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" value="magic" id="magic">
+                    <label for="magic">Plano Pleno<span>R$ 299,99</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-xs cor-8">
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/acesso.svg" alt="">Acesso a todas as
+                                receitas</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/livro.svg" alt="">1 livro com as
+                                principais receitas</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/calendario.svg" alt="">1 ano de acesso
+                            </li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/2dispositivos.svg" alt="">até 2
+                                dispositivos</li>
+                        </ul>
+                        <img src="../Imagens/ImagensPedro/imagensPlanos/planopleno.png" alt="Bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" value="nebula" id="nebula">
+                    <label for="nebula">Plano Pleno<span>R$ 499</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul class="font-1-xs cor-8">
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/acesso.svg" alt="">Acesso a todas as
+                                receitas</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/ofline.svg" alt="">Acesso offline</li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/livro.svg" alt="">1 livro novo todo mês
+                            </li>
+                            <li><img src="../Imagens/ImagensPedro/iconesPlanos/2dispositivos.svg" alt="">Acesso em até 3
+                                dispositivos</li>
+                        </ul>
+                        <img src="../Imagens/ImagensPedro/imagensPlanos/planosenior.png" alt="Bicicleta branca">
+                    </div>
+
+                </div>
+            </div>
+            <div class="orcamento-dados form">
+                <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome">
+                </div>
+                <div class="col-2">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+                </div>
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <h2 class="font-1-xs cor-9 col-2">entrega</h2>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <button class="botao col-2">Solicitar Orçamento</button>
+            </div>
+        </form>
+    </main>
+
+    <footer style="background-color: #032C36;height: 89px;padding-bottom: 0px;
+    ;  position: relative;" class="footer-bg">
+        <div style="margin: 0 30%;display: block;text-wrap: nowrap;padding-top: 30px;">
+            <p style="color: white;font-family: roboto, sans-serif;font-size: 32px;">Desenvolvido por @equipeAgostinhe
+            </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/formulario.js"></script>
+</body>
+
+</html>
