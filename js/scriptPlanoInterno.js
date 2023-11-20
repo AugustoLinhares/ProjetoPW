@@ -131,14 +131,25 @@ function AlterarPagina() {
 
     if (plano.titulo == 'Plano júnior') {
         galeriaContainer.prepend(imgJunior);
-        console.log(plano.titulo);
     }
     else if (plano.titulo == 'Plano Sênior') {
         galeriaContainer.prepend(imgSenior);
-        console.log(plano.titulo);
+    }
+    AlterarLink();
+}
+
+function AlterarLink() {
+    const plano = DefinirPlano();
+    const aBotao = document.querySelector('div.bicicleta-comprar a.botao');
+    console.log(plano.titulo);
+    if (plano.titulo == 'Plano júnior') {
+        aBotao.href = 'orcamento-plano.html?plano=junior'
+    }
+    else if (plano.titulo == 'Plano Sênior') {
+        aBotao.href = 'orcamento-plano.html?plano=senior'
     }
     else {
-        console.log(plano.titulo);
+        aBotao.href = 'orcamento-plano.html?plano=pleno'
     }
-
+    console.log(aBotao.href);
 }
