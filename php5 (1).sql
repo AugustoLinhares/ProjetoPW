@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 22-Set-2023 às 15:53
+-- Tempo de geração: 27-Nov-2023 às 15:01
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.1
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `login` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Usuario` varchar(100) NOT NULL,
   `Senha` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -40,7 +40,7 @@ CREATE TABLE `login` (
 --
 
 CREATE TABLE `parceiro` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Bairro` varchar(100) NOT NULL,
   `NomeFant` varchar(150) NOT NULL,
   `Pais` varchar(60) NOT NULL,
@@ -63,7 +63,7 @@ CREATE TABLE `parceiro` (
 --
 
 CREATE TABLE `patrocinador` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Numero` int(11) NOT NULL,
   `Bairro` varchar(100) NOT NULL,
   `NomeFant` varchar(150) NOT NULL,
@@ -80,11 +80,33 @@ CREATE TABLE `patrocinador` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `receita`
+-- Estrutura da tabela `plano`
 --
 
+CREATE TABLE `plano` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `NomePln` varchar(300) NOT NULL,
+  `DescricaoPln` varchar(300) NOT NULL,
+  `PrecoPln` double NOT NULL,
+  `id_par_fk` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+CREATE TABLE `usuario` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `DataNasc` date NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `CPF` varchar(12) NOT NULL,
+  `Genero` varchar(40) NOT NULL,
+  `Foto` blob NOT NULL,
+  `Nome` varchar(100) NOT NULL,
+  `Senha` varchar(50) NOT NULL,
+  `id_login_fk` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `receita` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Titulo` varchar(100) NOT NULL,
   `Adicional` varchar(100) NOT NULL,
   `Descricao` varchar(100) NOT NULL,
@@ -97,23 +119,8 @@ CREATE TABLE `receita` (
   `id_usu_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `receita`
---
-
-INSERT INTO `receita` (`Id`, `Titulo`, `Adicional`, `Descricao`, `Imagem`, `Ingrediente`, `TempoPrep`, `Dificuldade`, `Porcao`, `Passo`, `id_usu_fk`) VALUES
-(1, 'aa', 'aa', 'aaa', '', 'aaa', '00:00:02', '1', 2, 'aa', 0),
-(2, 'bb', 'dd', 'ff', '', 'bb', '00:00:02', '2', 2, 'ff', 0),
-(3, 'bb', 'dd', 'ff', '', 'bb', '00:00:02', '2', 2, 'ff', 0);
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `tempero`
---
-
 CREATE TABLE `tempero` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Nome` varchar(100) NOT NULL,
   `Cidade` varchar(100) NOT NULL,
   `Estado` varchar(70) NOT NULL,
@@ -123,103 +130,38 @@ CREATE TABLE `tempero` (
   `id_usu_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `usuario`
---
-
-CREATE TABLE `usuario` (
-  `Id` int(11) NOT NULL,
-  `DataNasc` date NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `CPF` varchar(12) NOT NULL,
-  `Genero` varchar(40) NOT NULL,
-  `Foto` blob NOT NULL,
-  `Nome` varchar(100) NOT NULL,
-  `Senha` varchar(50) NOT NULL,
-  `id_login_fk` int(11) NOT NULL
+CREATE TABLE `venda` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `CPF` varchar(300) DEFAULT NULL,
+  `DATA` date DEFAULT NULL,
+  `VALOR` double DEFAULT NULL,
+  `id_usu_fk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`Id`);
-
---
--- Índices para tabela `parceiro`
---
 ALTER TABLE `parceiro`
-  ADD PRIMARY KEY (`Id`);
+  ADD UNIQUE KEY `id_log_fk` (`id_log_fk`);
 
 --
 -- Índices para tabela `patrocinador`
 --
 ALTER TABLE `patrocinador`
-  ADD PRIMARY KEY (`Id`);
+  ADD UNIQUE KEY `id_log_fk` (`id_log_fk`);
 
---
--- Índices para tabela `receita`
---
-ALTER TABLE `receita`
-  ADD PRIMARY KEY (`Id`);
+ALTER TABLE `plano`
+  ADD UNIQUE KEY `id_par_fk` (`id_par_fk`);
 
---
--- Índices para tabela `tempero`
---
-ALTER TABLE `tempero`
-  ADD PRIMARY KEY (`Id`);
-
---
--- Índices para tabela `usuario`
---
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`Id`);
+  ADD UNIQUE KEY `id_login_fk` (`id_login_fk`);
 
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
--- AUTO_INCREMENT de tabela `login`
---
-ALTER TABLE `login`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `parceiro`
---
-ALTER TABLE `parceiro`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `patrocinador`
---
-ALTER TABLE `patrocinador`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `receita`
---
 ALTER TABLE `receita`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  ADD UNIQUE KEY `id_usu_fk` (`id_usu_fk`);
 
---
--- AUTO_INCREMENT de tabela `tempero`
---
 ALTER TABLE `tempero`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  ADD UNIQUE KEY `id_usu_fk` (`id_usu_fk`);
 
---
--- AUTO_INCREMENT de tabela `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `venda`
+  ADD UNIQUE KEY `id_usu_fk` (`id_usu_fk`);
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
