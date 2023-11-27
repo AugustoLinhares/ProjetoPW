@@ -6,9 +6,9 @@ if($_conn===FALSE) {
  echo "Foi possível conectar ao Servidor de banco de dados ";
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SERVER["REQUEST_METHOD"] == "FILES") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    require_once('php5.php');
+    //require_once('php5.php');
     
     $Titulo = $_POST["Titulo"];
     $Adicional = $_POST["Adicional"];
