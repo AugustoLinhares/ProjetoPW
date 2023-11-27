@@ -13,15 +13,16 @@
 
         require_once('conexao.php');
         
+        $datanasc = $_POST["DataNasc"];
+        $email = $_POST["Email"];
+        $cpf = $_POST["CPF"];
+        $genero = $_POST["Genero"];
+        $foto = $_POST["Foto"];
         $nome = $_POST["Nome"];
-        $cidade = $_POST["Cidade"];
-        $estado = $_POST["Estado"];
-        $pais = $POST["Pais"];
-        $descricao = $_POST["Descricao"];
-        $componentes = $_POST["Componentes"];
-        $id_usu_fk = $_POST["id_usu_fk"];
+        $senha = $POST["Senha"];
+        $id_log_fk = $_POST["id_log_fk"];
 
-        $sql = "INSERT INTO tempero (Nome, Cidade, Estado, Pais, Descricao, Componentes, id_usu_fk) VALUES ('$nome', '$cidade', '$estado', '$pais', '$descricao', '$componentes', null);";
+        $sql = "INSERT INTO usuario (DataNasc, Email, CPF, Genero, Foto, Nome, Senha, id_log_fk) VALUES ('$datanasc', '$email', '$cpf', '$genero', '$foto', '$nome','$senha', null);";
 
         if ($conn->query($sql) === TRUE) {
             echo"Dados inseridos com sucesso!";
@@ -35,6 +36,7 @@
         echo "Erro Dados";
     }
     ?>
+
 </body>
 </html>
     

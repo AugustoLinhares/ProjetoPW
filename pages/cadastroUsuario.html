@@ -28,44 +28,30 @@
         </nav>
     </header>
     <main>
-        <form action="">
+        <form class="row g-3" method="POST" method="FILES" enctype="multipart/form-data" action="php5/usuario.php">
 
             <p>
-                <label class="form-label">Nome:</label>
+                <label for="Nome" class="form-label">Nome completo:</label>
                 <input required maxlength=50 class="form-control" id="usuarioLogin" type="text">
             </p>
             <p>
-                <label class="form-label">Sobrenome: <input required class="form-control" maxlength=50
-                        type="text"></label>
+                <label for="Email" class="form-label">Email: <input required class="form-control" id="email" type="text"></label>
             </p>
+            
             <p>
-                <label class="form-label">Email: <input required class="form-control" id="email" type="text"></label>
-            </p>
-            <p>
-                <label class="form-label">Confirme seu email: <input required class="form-control" id="verificarEmail"
-                        type="text"></label>
-            </p>
-            <p id="paragrafoErroEmail" style="color: red; padding: 0; margin-top: 0;display: none;">Emails não conferem
-            </p>
-            <p>
-                <label class="form-label">CPF: </label>
+                <label for="CPF" class="form-label">CPF: </label>
                 <input required class="form-control cpf" maxlength="14" type="text">
             </p>
             <p id="paragrafoErroCpf" style="color: red; padding: 0; margin-top: 0;display: none;">Cpf Invalido</p>
 
 
             <p>
-                <label class="form-label" aria-labelledby="passwordHelpBlock">Senha: </label>
+                <label for="Senha" class="form-label" aria-labelledby="passwordHelpBlock">Senha: </label>
                 <input required id="senha" class="form-control" type="password">
             </p>
+           
             <p>
-                <label class="form-label" aria-labelledby="passwordHelpBlock">Confirme a sua senha: </label>
-                <input required id="verificarSenha" class="form-control" type="password">
-            </p>
-            <p id="paragrafoErroSenha" style="color: red; padding: 0; margin-top: 0;display: none;">Senhas não conferem
-            </p>
-            <p>
-                <label class="form-label">Data de Nascimento:</label> <input required class="form-control"
+                <label for="DataNasc" class="form-label">Data de Nascimento:</label> <input required class="form-control"
                     id="dataNascimento" type="date">
             </p>
             <p id="paragrafoErroData" style="color: red; padding: 0; margin-top: 0;display: none;">Data Incoerente</p>
@@ -73,20 +59,20 @@
             <fieldset>
                 <legend>Gênero:</legend>
                 <p>
-                    <label class="form-check-label"></label>
+                    <label for="Gênero" class="form-check-label"></label>
                     <input required type="radio" class="form-check-input" name="sexo" value="Masculino">Masculino
                 </p>
                 <p>
-                    <label class="form-check-label"></label>
+                    <label for="Gênero" class="form-check-label"></label>
                     <input required type="radio" class="form-check-input" name="sexo" value="Feminino">Feminino
                 </p>
                 <p>
-                    <label class="form-check-label"></label>
+                    <label for="Gênero" class="form-check-label"></label>
                     <input required type="radio" class="form-check-input" name="sexo" value="Outro">Outro
                 </p>
             </fieldset>
             <p>
-                <label><input required class="form-control" type="file" name="imagem" accept=".jpeg"> Sua foto</label>
+                <label for="Imagem"><input required class="form-control" type="file" name="imagem" accept=".jpeg"> Sua foto</label>
             </p>
             <button type="submit">Cadastrar</button>
         </form>

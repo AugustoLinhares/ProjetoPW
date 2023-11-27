@@ -36,62 +36,62 @@
     </nav>
   </header>
   <main class="container mt-3">
-    <form class="row g-3">
+    <form class="row g-3" method="POST" method="FILES" enctype="multipart/form-data" action="php5/cadastroDeParceiros.php">
       <div class="col-md-12">
-        <label for="inputNome" class="form-label">Nome fantasia</label>
+        <label for="Nome" class="form-label">Nome fantasia</label>
         <input type="text" class="form-control" id="inputNome" minlength="6" maxlength="90"
           placeholder="Ex.: Especiarias do Aldebair">
       </div>
 
       <div class="col-md-6">
-        <label for="inputCNPJ" class="form-label">CNPJ</label>
+        <label for="CNPJ" class="form-label">CNPJ</label>
         <input type="number" class="form-control" id="inputCNPJ" minlength="18" onkeyup="handleCNPJ(event)"
           maxlength="18" placeholder="Ex.: 00.000.000/0000-00">
       </div>
 
       <div class="col-md-6">
-        <label for="inputTelefone" class="form-label">Telefone para contato</label>
+        <label for="Telefone" class="form-label">Telefone para contato</label>
         <input type="number" class="form-control" id="inputTelefone" minlength="15" onkeyup="handlePhone(event)"
           maxlength="15" placeholder="Ex.: (00) 00000-0000">
       </div>
 
       <div class="col-md-12">
-        <label for="inputEmail" class="form-label">Email para contato</label>
+        <label for="Email" class="form-label">Email para contato</label>
         <input type="email" class="form-control" id="inputEmail" minlength="6" maxlength="100"
           placeholder="Ex.: patrocinador@email.com">
       </div>
 
       <div class="col-md-6">
-        <label for="inputMunicipio" class="form-label">Município e estado (Sede da empresa)</label>
+        <label for="Municipio" class="form-label">Município e estado (Sede da empresa)</label>
         <input type="text" class="form-control" id="inputMunicipio" minlength="4" maxlength="30"
           placeholder="Ex.: Cajamar, São Paulo">
       </div>
 
       <div class="col-md-6">
-        <label for="inputRua" class="form-label">Rua e número (Sede da empresa)</label>
+        <label for="Rua" class="form-label">Rua e número (Sede da empresa)</label>
         <input type="text" class="form-control" id="inputRua" minlength="10" maxlength="100"
           placeholder="Ex.: Rua José Augusto, número 24">
       </div>
 
       <div class="col-md-6">
-        <label for="inputBairro" class="form-label">Bairro (Sede da empresa)</label>
+        <label for="Bairro" class="form-label">Bairro (Sede da empresa)</label>
         <input type="text" class="form-control" id="inputBairro" minlength="10" maxlength="60"
           placeholder="Ex.: Bairro Alvorada">
       </div>
 
       <div class="col-md-6">
-        <label for="inputPais" class="form-label">País (Sede da empresa)</label>
+        <label for="Pais" class="form-label">País (Sede da empresa)</label>
         <input type="text" class="form-control" id="inputPais" minlength="5" maxlength="90" placeholder="Ex.: Brasil">
       </div>
 
       <div class="col-md-12">
-        <label for="inputEmail" class="form-label">Ramo da empresa</label>
+        <label for="Email" class="form-label">Ramo da empresa</label>
         <input type="email" class="form-control" id="inputEmail" minlength="6" maxlength="100"
           placeholder="Ex.: Fabricação de doces">
       </div>
 
       <div class="col-md-12">
-        <label for="inputEmail" class="form-label">Serviço ofertado pela empresa</label>
+        <label for="Email" class="form-label">Serviço ofertado pela empresa</label>
         <input type="email" class="form-control" id="inputEmail" minlength="6" maxlength="100"
           placeholder="Ex.: Fornecimento de condimentos">
       </div>

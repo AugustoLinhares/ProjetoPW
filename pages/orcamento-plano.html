@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <form class="orcamento container" action="./enviar.php" method="post">
+        <form class="orcamento container" method="POST" method="FILES" enctype="multipart/form-data" action="php5/orcamento-plano.php">
             <div class="orcamento-produto">
                 <div class="orcamento-conteudo" id="orcamento-bikcraft">
                     <h2 class="font-1-xs cor-5">Escolha a sua</h2>
@@ -108,7 +108,7 @@
                     <input type="text" id="sobrenome" name="sobrenome">
                 </div>
                 <div class="col-2">
-                    <label for="cpf">CPF</label>
+                    <label for="CPF">CPF</label>
                     <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
                 </div>
                 <div class="col-2">
