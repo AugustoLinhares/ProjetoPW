@@ -14,7 +14,8 @@
     font-family: 'Abel', sans-serif;
 }
 
-body{
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }

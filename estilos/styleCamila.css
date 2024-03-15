@@ -1,0 +1,29 @@
+
+/* Feito por Camila Ortolane */
+
+.container{
+    margin: 50px;
+}
+.textareas{
+    width: 30em;
+}
+
+label {
+    margin-top: 20px;
+}
+
+h6 {
+    margin-top: 15px;
+}
+.largura{
+    width: 5em;
+}
+.mensagem-erro{
+    color: #e63636;
+    font-size: small;
+    
+}
+.larg{
+    width: 30em;
+
+}

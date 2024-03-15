@@ -1,0 +1,124 @@
+<!-- Feito por Camila Ortolane -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos/styleCamila.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Receitas Tipicas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Agostine</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="are.html">Quem somos</a>
+            <a href="doces.html">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="cadastroUsuario.html">Se cadastrar</a>
+            <a href="planos.html">Planos</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="form-grup">
+                <label>Nome da receita:</label>
+                <input class="form-control" required name="nome" type="text" name="nome" id="nome"
+                    placeholder="Digite aqui...">
+                <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-grup">
+                <class class="largura">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 style="font-weight: bold;">Local de Origem</h6>
+                            <div>
+                                <label for="">Cidade de Origem:</label>
+                                <input class="form-control" required name="cidade" type="text" name="cidade" id="cidade"
+                                    placeholder="Digite aqui...">
+                                <span class="mensagem-erro" data-erro=""></span>
+                            </div>
+
+                            <div>
+                                <label for="">Estado de Origem:</label>
+                                <input class="form-control" required name="estado" type="text" name="estado" id="estado"
+                                    placeholder="Digite aqui...">
+                                <span class="mensagem-erro" data-erro=""></span>
+                            </div>
+
+                            <div>
+                                <label for="">País de Origem:</label>
+                                <input class="form-control" required name="pais" type="text" name="pais" id="pais"
+                                    placeholder="Digite aqui...">
+                                <span class="mensagem-erro" data-erro=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </class>
+
+                <div class="larg d-flex flex-row bd-highlight mb-3">
+
+                    <div class="p-2 bd-highlight">
+
+                        <label for="">Tempo de preparo</label>
+                        <input class="form-control" required name="tempo" type="text" name="porcao" id="tempo"
+                            placeholder="Digite aqui...">
+                        <span class="mensagem-erro" data-erro=""></span>
+
+                    </div>
+
+                    <div class="p-2 bd-highlight">
+
+                        <label for="">Porções</label>
+                        <input class="form-control" required name="porcao" type="text" name="porcao" id="tempo"
+                            placeholder="Digite aqui...">
+                        <span class="mensagem-erro" data-erro=""></span>
+
+                    </div>
+
+                </div>
+
+                <div class="textareas">
+
+                    <div class="form-group">
+
+                        <label for="exampleFormControlTextarea1">Ingredientes</label>
+                        <textarea class="form-control" required name="input" id="descricao" name="input"
+                            rows="5"></textarea>
+                        <span class="mensagem-erro" data-erro=""></span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="exampleFormControlTextarea1">Modo de preparo</label>
+                        <textarea class="form-control" required name="input" id="componentes" name="input"
+                            rows="5"></textarea>
+                        <span class="mensagem-erro" data-erro=""></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button style="margin: 15px 0;" type="submit" class="btn btn-primary">Salvar</button>
+
+        </div>
+
+    </main>
+
+    <script src="js/receitasTipicas.js"></script>
+
+</body>
+
+</html>

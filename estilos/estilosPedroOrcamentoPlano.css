@@ -1,0 +1,31 @@
+#orcamento {
+    background: linear-gradient(#1F6A73 600px, #fff
+    0)!important;
+}
+
+h1.font-1-xxl{
+    font-family: poppins;
+}
+
+.orcamento-produto{
+    background:#032C36!important;
+}
+
+.orcamento-conteudo {
+    display: inline !important;
+}
+
+.orcamento-produto label{
+    color: #FFF!important;
+    background-color: #1F6A73!important;
+}
+
+#orcamento-bikcraft, #seguro:checked~#orcamento-seguro {
+    display: grid !important;
+    gap: 20px;
+}
+
+button.botao.col-2{
+    background: #032C36;
+    color:#fff;
+}

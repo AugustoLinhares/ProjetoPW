@@ -6,20 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/receitas.css">
+    <link rel="stylesheet" href="/estilos/receitas.css">
+    <link rel="stylesheet" href="../estilos/estiloPedroAvaliarReceita.css">
+
     <title>Document</title>
 
 </head>
 
 <style>
-    .img{
+    .img {
         position: relative;
         z-index: 1;
     }
-    .img::after{
+
+    .img::after {
         z-index: -1;
         content: "";
-        height: 1000px;
+        height: auto;
         width: 100%;
         display: flex;
         background-image: url("../Imagens/pexels-jer-chung-2116094.jpg");
@@ -35,14 +38,29 @@
 </style>
 
 <body>
-    
+
+    <div id="ovrly"></div>
+    <div id="avaliacao">
+        <form class="AvaliarReceita" action="">
+            <h2>Sua opinião é preciosa. Obrigado !
+            </h2>
+            <img style="width:30px; height:30px ;" src="../Imagens/ImagensPedro/estrela.png" alt="" srcset="">
+            <label for="Seu comentario"></label>
+            <input type="text" name="" id="">
+            <button onclick="off()">Publicar</button>
+        </form>
+    </div>
+
     <header>
         <h1>Agostine</h1> <!-- Cabeçalho -->
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Doces</a>
-            <a href="#">Salgados</a>
+            <a href="index.html">Home</a>
+            <a href="are.html">Quem somos</a>
+            <a href="doces.html">Doces</a>
+            <a href="salgados.html">Salgados</a>
+            <a href="cadastroUsuario.html">Se cadastrar</a>
+            <a href="planos.html">Planos</a>
+
         </nav>
     </header>
 
@@ -50,38 +68,42 @@
 
         <div class="img">
 
-            <div> <!-- Nome da receita -->
-                <br><h1>Panqueca</h1> <br>
+            <div style="display:flex ;gap: 20px;"> <!-- Nome da receita -->
+                <br>
+                <h1>Frango grelhado com vagem</h1> <br>
+                <button id="btn" onclick="on()">Avalie essa receita</button>
             </div>
-    
+
             <div> <!-- Ingredientes -->
                 <h3>Ingredientes</h3>
-                
+
                 <ul>
-                    <li>1 ovo</li> <br>
-                    <li>1 colher (sopa) de óleo</li> <br>
-                    <li>1/2 xícara de leite</li> <br>
-                    <li>2 colheres (sopa) de açúcar</li> <br>
-                    <li>1 colher (chá) de sal</li><br>
-                    <li>1 xícara de farinha de trigo</li> <br>
-                    <li>1 colher (sopa) de fermento em pó</li> <br>
+                    <li>1/2 peito de frango</li> <br>
+                    <li>10 vagens</li> <br>
+                    <li>1 colher de azeite</li> <br>
+                    <li>1 colher de manteiga</li> <br>
+                    <li>sal e pimenta-do-reino a gosto</li><br>
+                    <li>salsinha e cebola a gosto</li> <br>
+                    <li>1 cebola pequena</li> <br>
                 </ul>
 
                 <br>
             </div>
-    
+
             <div> <!-- Modo de preparo -->
                 <h3>Modo de preparo</h3>
-    
+
                 <ol>
-                    <li>Coloque o ovo, a colher de óleo e a xícara de leite dentro de um recipiente e mexa-os até que se tornem uma massa homogênea.</li> <br>
-                    <li>Adicione à massa o açúcar, o sal, a farinha de trigo e o fermento. Repita o processo do item anterior.</li> <br>
+                    <li>Coloque o ovo, a colher de óleo e a xícara de leite dentro de um recipiente e mexa-os até que se
+                        tornem uma massa homogênea.</li> <br>
+                    <li>Adicione à massa o açúcar, o sal, a farinha de trigo e o fermento. Repita o processo do item
+                        anterior.</li> <br>
                     <li>Unte uma frigideira à 200 °C com manteiga e deposite nela a massa da panqueca.</li> <br>
                     <li>Vire a panqueca quando achar necessário virá-la.</li> <br>
                     <li>Uma vez servida adicione complementos (como, por exemplo, o mel) a gosto.</li><br>
                 </ol>
 
-            </div>  
+            </div>
         </div>
 
     </main>
@@ -89,6 +111,8 @@
     <footer> <!-- Rodapé -->
         <p class="footer">Desenvolvido por <a href="#">TrupTech</a></p>
     </footer>
+    <script src="js/scriptAvaliacaoPedro.js"></script>
 
 </body>
+
 </html>
